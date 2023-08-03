@@ -1,0 +1,29 @@
+.s_layout,
+.l_layout{
+    display: flex;
+    flex-direction: column;
+    margin: 10rem auto;
+    width: 95%;
+    gap: 2.5rem;
+    position: relative;
+}
+
+
+@media (min-width: 1080px) {
+    .s_layout,
+    .l_layout{
+        flex-direction: row;
+    }
+
+    .s_layout{
+        margin: 15rem auto;
+    }
+
+    .l_layout{
+        width: 80%;
+    }
+
+    .s_layout{
+        width: 70%;
+    }
+}
