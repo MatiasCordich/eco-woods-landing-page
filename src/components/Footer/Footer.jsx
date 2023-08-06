@@ -2,6 +2,7 @@ import { CgInstagram } from 'react-icons/cg'
 import { PiPinterestLogo, PiTwitterLogo } from 'react-icons/pi'
 import { VscGithubAlt } from 'react-icons/vsc'
 import { AiFillHeart } from 'react-icons/ai'
+import { Link } from 'react-scroll'
 import logo from '../../assets/logo.png'
 import './footer.css'
 
@@ -26,10 +27,51 @@ const Footer = () => {
                     </ul>
                     <ul className='footer_links'>
                         <div className='line'></div>
-                        <li>Home</li>
-                        <li>Historia</li>
-                        <li>Galeria</li>
-                        <li>Contacto</li>
+                        <li>
+                            <Link
+                                to='page1'
+                                style={{ cursor: 'pointer' }}
+                                spy={true}
+                                smooth={true}
+                                duration={2500}
+                            >
+                                Home
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link
+                                to='page2'
+                                style={{ cursor: 'pointer' }}
+                                spy={true}
+                                smooth={true}
+                                duration={2000}
+                            >
+                                Historia
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to='page3'
+                                style={{ cursor: 'pointer' }}
+                                spy={true}
+                                smooth={true}
+                                duration={2000}
+                            >
+                                Galeria
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to='page4'
+                                style={{ cursor: 'pointer' }}
+                                spy={true}
+                                smooth={true}
+                                duration={1500}
+                            >
+                                Contacto
+                            </Link>
+                        </li>
                         <div className='line'></div>
                     </ul>
 

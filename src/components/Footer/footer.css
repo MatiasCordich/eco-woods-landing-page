@@ -73,6 +73,11 @@
     padding: 1rem;
 }
 
+.footer_links a{
+    color: var(--brown);
+    font-weight: 500;
+}
+
 .footer_author{
     gap: .8rem;
     padding: .8rem;

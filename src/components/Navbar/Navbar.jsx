@@ -73,7 +73,7 @@ const Navbar = () => {
                          style={{cursor:'pointer'}}
                          spy={true}
                          smooth={true}
-                         duration={500}
+                         duration={1500}
                         onClick={() => handleClick()}>
                         Home
                     </Link>
@@ -95,7 +95,7 @@ const Navbar = () => {
                         spy={true}
                         smooth={true}
                         offset={-120}
-                        duration={700}
+                        duration={1000}
                         onClick={() => handleClick()}>
                         Historia
                     </Link>
@@ -116,7 +116,7 @@ const Navbar = () => {
                          to='page3'
                          spy={true}
                          smooth={true}
-                         duration={500}
+                         duration={1000}
                         onClick={() => handleClick()}>
                         Galería
                     </Link>
@@ -138,7 +138,7 @@ const Navbar = () => {
                          spy={true}
                          smooth={true}
                          offset={-100}
-                         duration={500}
+                         duration={1500}
                         href="#"
                         onClick={() => handleClick()}>
                         Contacto

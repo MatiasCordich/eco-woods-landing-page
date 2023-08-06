@@ -68,7 +68,23 @@ const Header = () => {
         >
           <div className='header_img-box'>
             <img className='header_right-img' src={header_img} alt="furniture_img" />
-            <div className='shadow'></div>
+            <div className='shadow'>
+              <motion.div
+                className='shadow_content'
+                initial={{opacity: 0 }}
+                whileHover={{opacity: 1 }}
+                transition={{ duration: .5, delay: .3}}>
+                <Link
+                  style={{ cursor: 'pointer' }}
+                  to='page3'
+                  spy={true}
+                  smooth={true}
+                  duration={1000}
+                >
+                  <h2>Ver mas...</h2>
+                </Link>
+              </motion.div>
+            </div>
           </div>
 
         </motion.section>
