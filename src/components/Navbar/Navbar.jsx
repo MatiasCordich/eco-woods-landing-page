@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
 import { RiMenu3Line } from 'react-icons/ri'
 import './navbar.css'
@@ -67,11 +68,15 @@ const Navbar = () => {
                             closed: { opacity: 0, y: 20, transition: { duration: .3 } }
                         }
                     }>
-                    <a
-                        href="#"
+                    <Link
+                         to='page1'
+                         style={{cursor:'pointer'}}
+                         spy={true}
+                         smooth={true}
+                         duration={500}
                         onClick={() => handleClick()}>
                         Home
-                    </a>
+                    </Link>
                 </motion.li>
                 <motion.li
                     variants={
@@ -84,11 +89,16 @@ const Navbar = () => {
                             closed: { opacity: 0, y: 20, transition: { duration: .4 } }
                         }
                     }>
-                    <a
-                        href="#"
+                    <Link
+                        to='page2'
+                        style={{cursor:'pointer'}}
+                        spy={true}
+                        smooth={true}
+                        offset={-120}
+                        duration={700}
                         onClick={() => handleClick()}>
                         Historia
-                    </a>
+                    </Link>
                 </motion.li>
                 <motion.li
                     variants={
@@ -101,11 +111,15 @@ const Navbar = () => {
                             closed: { opacity: 0, y: 20, transition: { duration: .5 } }
                         }
                     }>
-                    <a
-                        href="#"
+                    <Link
+                    style={{cursor:'pointer'}}
+                         to='page3'
+                         spy={true}
+                         smooth={true}
+                         duration={500}
                         onClick={() => handleClick()}>
                         Galería
-                    </a>
+                    </Link>
                 </motion.li>
                 <motion.li
                     variants={
@@ -118,11 +132,17 @@ const Navbar = () => {
                             closed: { opacity: 0, y: 20, transition: { duration: .6 } }
                         }
                     }>
-                    <a
+                    <Link
+                         to='page4'
+                         style={{cursor:'pointer'}}
+                         spy={true}
+                         smooth={true}
+                         offset={-100}
+                         duration={500}
                         href="#"
                         onClick={() => handleClick()}>
                         Contacto
-                    </a>
+                    </Link>
                 </motion.li>
             </motion.ul>
 

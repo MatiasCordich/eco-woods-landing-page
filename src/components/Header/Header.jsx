@@ -2,6 +2,7 @@ import { BigLayout } from '../Layouts/Layouts'
 import { CgInstagram } from 'react-icons/cg'
 import { PiPinterestLogo, PiTwitterLogo } from 'react-icons/pi'
 import { motion } from 'framer-motion'
+import { Link } from 'react-scroll'
 import Navbar from '../Navbar/Navbar'
 import logo from '../../assets/logo.png'
 import header_img from '../../assets/furniture.png'
@@ -10,7 +11,7 @@ import './header.css'
 
 const Header = () => {
   return (
-    <header className='header'>
+    <header className='header' id='page1'>
       <motion.div
         className='header_logo'
         initial={{ y: -20, opacity: 0 }}
@@ -38,16 +39,25 @@ const Header = () => {
             <li><PiTwitterLogo /></li>
             <div className='line'></div>
           </ul>
-          <motion.a 
-            href='#' 
-            className='header_left-down'
+          <motion.div
             initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1}}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 2 }}
           >
-            <img width="50" height="50" src="https://img.icons8.com/ios/50/000000/long-arrow-down.png" alt="long-arrow-down" />
-            Ver mas...
-          </motion.a>
+            <Link
+              to='page2'
+              style={{ cursor: 'pointer' }}
+              spy={true}
+              smooth={true}
+              offset={-120}
+              duration={700}
+              className='header_left-down'
+            >
+              <img width="50" height="50" src="https://img.icons8.com/ios/50/000000/long-arrow-down.png" alt="long-arrow-down" />
+              Ver mas...
+            </Link>
+          </motion.div>
+
 
         </motion.section>
         <motion.section

@@ -16,103 +16,106 @@ import './galery.css'
 const Galery = () => {
     return (
         <BigLayout direction='column'>
-            <motion.h2
-                className='title_section center'
-                initial={{ x: -20, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{ duration: .8, delay: 1 }}
-            ><div className='line'></div><span className='number_section'>2.</span>Galeria<div className='line'></div>
-            </motion.h2>
-            <div className='grid-wrapper'>
-                <motion.div
-                    className='item'
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
+            <div id='page3'>
+                <motion.h2
+                    className='title_section center'
+                    initial={{ x: -20, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: .8, delay: 1 }}
-                >
-                    <img src={img01} alt="furniture-img" />
-                </motion.div>
-                <motion.div 
-                    className='item'
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: .8, delay: 1.3 }}
-                >
-                    <img src={img02} alt="furniture-img" />
-                </motion.div>
-                <motion.div 
-                    className='item'
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: .8, delay: 1.5 }}
-                >
-                    <img src={img03} alt="furniture-img" />
-                </motion.div>
-                <motion.div 
-                    className='item'
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: .8, delay: 1.7 }}
-                >
-                    <img src={img04} alt="furniture-img" />
-                </motion.div>
-                <motion.div 
-                    className='item'
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: .8, delay: 1.9 }}
-                >
-                    <img src={img05} alt="furniture-img" />
-                </motion.div>
-                <motion.div 
-                    className='item'
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: .8, delay: 1.9 }}
-                >
-                    <img src={img06} alt="furniture-img" />
-                </motion.div>
-                <motion.div 
-                    className='item'
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: .8, delay: 1.5 }}
-                >
-                    <img src={img07} alt="furniture-img" />
-                </motion.div>
-                <motion.div 
-                    className='item'
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: .8, delay: 1.7 }}
-                >
-                    <img src={img08} alt="furniture-img" />
-                </motion.div>
-                <motion.div 
-                    className='item'
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: .8, delay: 1.9 }}
-                >
-                    <img src={img09} alt="furniture-img" />
-                </motion.div>
-                <motion.div 
-                    className='item'
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: .8, delay: 1.5 }}
-                >
-                    <img src={img10} alt="furniture-img" />
-                </motion.div>
-                <motion.div 
-                    className='item'
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: .8, delay: 1.7 }}
-                >
-                    <img src={img11} alt="furniture-img" />
-                </motion.div>
+                ><div className='line'></div><span className='number_section'>2.</span>Galeria<div className='line'></div>
+                </motion.h2>
+                <div className='grid-wrapper'>
+                    <motion.div
+                        className='item'
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: .8, delay: 1 }}
+                    >
+                        <img src={img01} alt="furniture-img" />
+                    </motion.div>
+                    <motion.div
+                        className='item'
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: .8, delay: 1.3 }}
+                    >
+                        <img src={img02} alt="furniture-img" />
+                    </motion.div>
+                    <motion.div
+                        className='item'
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: .8, delay: 1.5 }}
+                    >
+                        <img src={img03} alt="furniture-img" />
+                    </motion.div>
+                    <motion.div
+                        className='item'
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: .8, delay: 1.7 }}
+                    >
+                        <img src={img04} alt="furniture-img" />
+                    </motion.div>
+                    <motion.div
+                        className='item'
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: .8, delay: 1.9 }}
+                    >
+                        <img src={img05} alt="furniture-img" />
+                    </motion.div>
+                    <motion.div
+                        className='item'
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: .8, delay: 1.9 }}
+                    >
+                        <img src={img06} alt="furniture-img" />
+                    </motion.div>
+                    <motion.div
+                        className='item'
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: .8, delay: 1.5 }}
+                    >
+                        <img src={img07} alt="furniture-img" />
+                    </motion.div>
+                    <motion.div
+                        className='item'
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: .8, delay: 1.7 }}
+                    >
+                        <img src={img08} alt="furniture-img" />
+                    </motion.div>
+                    <motion.div
+                        className='item'
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: .8, delay: 1.9 }}
+                    >
+                        <img src={img09} alt="furniture-img" />
+                    </motion.div>
+                    <motion.div
+                        className='item'
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: .8, delay: 1.5 }}
+                    >
+                        <img src={img10} alt="furniture-img" />
+                    </motion.div>
+                    <motion.div
+                        className='item'
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: .8, delay: 1.7 }}
+                    >
+                        <img src={img11} alt="furniture-img" />
+                    </motion.div>
+                </div>
             </div>
+
         </BigLayout>
     )
 }

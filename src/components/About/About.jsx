@@ -7,7 +7,7 @@ const About = () => {
   return (
 
     <SmallLayout>
-      <div>
+      <div id='page2'>
         <motion.h2 
           className='title_section'
           initial={{x:-20, opacity:0}}
